@@ -70,7 +70,7 @@ func doPush(ctx *cli.Context) {
 		stringURL = conf.URL
 	}
 
-	if !ctx.IsSet("priority") && conf != nil {
+	if priority == 0 && conf != nil {
 		priority = conf.DefaultPriority
 	}
 
